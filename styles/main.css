@@ -44,10 +44,11 @@ p{
 h4{
     font-size: .9em;
     margin: 0 auto;
-    font-weight: 100;
+    font-weight: lighter;
     font-style: italic;
     border-top: 2px solid darkgreen;
     padding-top: 4px;
+    color:dimgrey;
 }
 
 footer{
