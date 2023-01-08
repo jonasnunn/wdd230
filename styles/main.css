@@ -9,8 +9,8 @@ img {
 
 header{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 50%;
+    grid-template-columns: 1fr 9fr;
+    width: 40%;
     margin: 0 auto;
     background-color: darkgreen;
     color: white;
@@ -22,11 +22,10 @@ h1{
     margin: 0 auto;
     padding-top: 50px;
     font-size: 2.3em;
-    text-shadow: 1px black;
 }
 
 main{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     line-height: .8em;
 }
@@ -52,7 +51,7 @@ h4{
 }
 
 footer{
-    width:  50%;
+    width:  40%;
     background-color: darkgreen;
     margin: 0 auto;
     color: white;
