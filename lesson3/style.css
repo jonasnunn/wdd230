@@ -1,0 +1,52 @@
+body{
+    background-color: #FAF8F0;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+    color: #2B2D42;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px black solid;
+}
+
+#blue {
+    background-color: #A5D9EB;
+    padding: 50px;
+}
+#white {
+    background-color: #FAF8F0;
+}
+#black {
+    background-color: #2B2D42;
+}
+#red {
+    background-color: #EF233C;
+}
+#purple {
+    background-color: #BE97C6 ;
+}
+
+
+
+
+/* Color Pallet */
+/* #A5D9EB blue
+#FAF8F0 white
+#2B2D42 black
+#EF233C red
+#BE97C6 purple*/
+
+/* #FAF8F0 tan
+#A5D9EB blue
+#244964 letter blue
+#C27364 house */
