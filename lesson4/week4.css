@@ -1,0 +1,38 @@
+.newstyle{
+    background-color: brown;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* hamburger menu */
+a {
+    display: none;
+    padding: 15px;
+    justify-content: left;
+}
+
+a:first-child {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.responsive a{
+    display: block;
+}
+
+@media screen and (min-width: 650px){
+    a:first-child{
+        display: none;
+    }
+    a{
+        display: block; 
+    }
+    nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
