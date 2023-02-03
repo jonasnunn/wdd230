@@ -36,6 +36,12 @@ nav {
     flex-direction: column;
 }
 
+#date-header {
+    margin: 0 auto;
+    grid-column: 1/-1;
+    color: #2B2D42;
+}
+
 /* hamburger menu */
 a {
     display: none;
@@ -63,6 +69,7 @@ a {
 #hero {
     margin-top: 20px;
     padding-bottom: 0px;
+    position: relative;
 }
 
 #hero img{
@@ -73,34 +80,88 @@ a {
 }
 
 #hero p{
-    color: black;
-    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    font-size: 2em;
+    text-shadow: 2px 
 }
 
 #events{
-    background-color: #A5D9EB;
+    background-color: #2B2D42;
     height: 200px;
     width: 95%;
     margin: 0 auto;
+}
+
+#events h4, h5, p{
+    color: #FAF8F0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#events h4{
+    padding-top: 10px;
+    font-size: 1.7em;
+    margin-bottom: 5px;
+}
+
+#events h5{
+    font-size: 1.3em;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+#events p{
+    font-size: 1.1em;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #weather{
-    background-color: #A5D9EB;
-    height: 200px;
-    width: 95%;
+    background-color: #2B2D42;
+    height: 300px;
+    width: 70%;
     margin: 0 auto;
+    color: #FAF8F0;
+}
+
+#weather h3{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+#weather h4{
+    text-align: center;
+    font-size: 2.3em;
+    padding-top: 10px;
 }
 
 #news-release{
-    background-color: #A5D9EB;
-    height: 200px;
+    background-color: #2B2D42;
+    height: 250px;
     width: 95%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
+#news-release h3{
+    text-align: center;
+    font-size: 2.3em;
+    padding-top: 10px;
+    color: #FAF8F0;
+}
+
+#news-release p{
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #spotlight{
-    background-color: #A5D9EB;
+    background-color: #2B2D42;
     width: 95%;
     margin: 0 auto;
     padding-top: 10px;
@@ -110,11 +171,51 @@ a {
 
 #spot-1, #spot-2{
     width: 95%;
-    height: 90px;
+    height: 400px;
     border: 1px black solid;
     margin: 0 auto;
     margin-top: 10px;
 }
+
+#spot-1 h3{
+    color: #FAF8F0;
+    text-align: center;
+}
+
+#spot-1 img{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+#spot-1 h4{
+    color: #FAF8F0;
+    text-align: center;
+}
+
+#spot-1 p{
+    border-top: 3px white;
+}
+
+#spot-2 img{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+#spot-2 h3{
+    color: #FAF8F0;
+    text-align: center;
+}
+
+#spot-2 h4{
+    color: #FAF8F0;
+    text-align: center;
+}
+
+/* #spot-2 p {
+    
+} */
 
 #spot-3{
     display: none;
@@ -222,7 +323,7 @@ footer img{
         display: block;
         grid-column: 1/-1;
         grid-row: 4/5;
-        background-color: #A5D9EB;
+        background-color: #2B2D42;
         width: 95%;
         margin: 0 auto;
         height: 95%;
