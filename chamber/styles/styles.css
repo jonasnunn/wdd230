@@ -62,9 +62,15 @@ a {
     display: block;
 }
 
-/* main {
-    background-color: #FAF8F0;    
-} */
+#banner {
+    background-color: #EF233C;
+    display: none;
+}
+
+#banner h3{
+    text-align: center;
+}
+
 
 #hero {
     margin-top: 20px;
@@ -86,6 +92,18 @@ a {
     left: 50px;
     font-size: 2em;
     text-shadow: 2px 
+}
+
+#id-button{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 200px;
+    height: 50px;
+    background-color: #EF233C;
+    color: #FAF8F0;
+    border-radius: 10px;
+    font-size: 1.4em;
 }
 
 #events{
@@ -171,7 +189,7 @@ a {
 
 #spot-1, #spot-2{
     width: 95%;
-    height: 400px;
+    height: 450px;
     border: 1px black solid;
     margin: 0 auto;
     margin-top: 10px;
@@ -275,7 +293,7 @@ footer img{
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1.2fr 1fr 2fr 1fr 1fr ;
     }
 
     #hero {

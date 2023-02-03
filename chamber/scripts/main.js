@@ -21,7 +21,7 @@ document.querySelector('#date-header').innerHTML = days[day] + ", " + today + " 
 document.querySelector('#date-footer').innerHTML = '&copy ' + year + " Jonas Nunn";
 
 // Message for monday or tuesday
-if (day == 1 || day == 2){
-    // Show the banner message here
+if (day == 1 || day == 5){
+    document.querySelector("#banner").style.display = "block";
 }
 
