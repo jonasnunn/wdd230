@@ -51,6 +51,10 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: #EF233C;
+}
+
 .ham    {
     display: block;
     text-decoration: none;
