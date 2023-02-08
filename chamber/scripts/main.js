@@ -25,3 +25,13 @@ if (day == 1 || day == 5){
     document.querySelector("#banner").style.display = "block";
 }
 
+// Windchill calculations
+const temp = document.querySelector(".temp").textContent;
+const wSpeed = document.querySelector(".wind-speed").textContent;
+
+let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (.04275*temp*Math.pow(wSpeed, 0.16)));
+
+if (temp <= 50 && wSpeed >= 3) {
+    const windChill = document.querySelector(".wind-chill")
+    windChill.textContent = chill;
+}
