@@ -82,11 +82,34 @@ a:hover{
     position: relative;
 }
 
-#hero img{
+#hero-1{
+    width: 95%;
+    display: none;
+    margin: 0 auto;
+    border: 1px black solid;
+}
+
+#hero-2{
     width: 95%;
     display: block;
     margin: 0 auto;
     border: 1px black solid;
+}
+
+#hero-3{
+    width: 95%;
+    display: none;
+    margin: 0 auto;
+    border: 1px black solid;
+}
+
+#hero-4{
+    width: 90%;
+    height: 700px;
+    display: none;
+    margin: 0 auto;
+    border: 1px black solid;
+    margin-bottom: 24px;
 }
 
 #hero p{
@@ -308,6 +331,14 @@ footer img{
         grid-row: 1/2;
     }
 
+    #hero-2{
+        display: none;
+    }
+
+    #hero-3{
+        display: block;
+    }
+
     #events{
         grid-column: 1/2;
         grid-row: 5/6;
@@ -410,8 +441,12 @@ footer img{
         margin-top: 0px;
     }
 
-    #hero img {
-        width: 100%;
+    #hero-3{
+        display: none;
+    }
+
+    #hero-4{
+        display: block;
     }
 
     #id-button{
