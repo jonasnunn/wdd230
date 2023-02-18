@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main img{
+    margin-top: 50px;
+}
+
+#days{
+    text-align: center;
+}
+
+@media screen and (min-width: 650px){
+
+    main img:hover{
+        transform: scale(1.1);
+        transition: .2s;
+    }
+
+}
+
+/* @media screen and (min-width: 800px){
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    main img{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+} */

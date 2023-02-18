@@ -35,3 +35,6 @@ if (temp <= 50 && wSpeed >= 3) {
     const windChill = document.querySelector(".wind-chill")
     windChill.textContent = chill;
 }
+
+localStorage.setItem("name", "Jonas Nunn - Permanent")
+sessionStorage.setItem("Current Class", "WDD 230 - not Permanent")
