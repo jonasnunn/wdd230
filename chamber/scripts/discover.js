@@ -1,6 +1,7 @@
 if (!localStorage.getItem("lastVisit")){
     localStorage.setItem("lastVisit", Date.now())
     document.querySelector("#diff").innerHTML = "Welcome New Visitor";
+    console.log("First if section")
 }
 else {
     let currentDate = Date.now();
@@ -26,7 +27,7 @@ const io = new IntersectionObserver (
     (entries) => {
         entries.forEach(entry => {
             if(!entry.isIntersecting){
-            console.log(entries);
+            // console.log(entries);
             }
             else{
                 preloadImages(entry.target)

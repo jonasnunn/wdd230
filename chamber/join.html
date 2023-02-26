@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Allen Chamber of Commerce</title>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/discover.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo-nowords.webp" alt="Allen Logo">
+        <h1>Allen</h1>
+        <h2>Chamber of Commerce</h2>
+        <nav class="navigation">
+            <a class="ham" href="#">&#9776;</a>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Contact</a>
+        </nav>
+        <span id="date-header"></span>
+    </header>
+
+    <h1>Join Us!</h1>
+    <main id="join_main">
+        <form method="get" action="thankyou.html">
+            <label for="fname">First Name *</label>
+            <input id="fname" name="firstname" required>
+
+            <label for="lname">Last Name *</label>
+            <input id="lname" name="lastname" required>
+
+            <label for="title">Business Position Title</label>
+            <input id="title" name="biztitle" pattern="[A-Za-z -]+" minlength="7" required>
+            
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" placeholder="name@domain.com">
+            
+            <label for="phone">Cell Phone *</label>
+            <input id="phone" name="phone" type="tel" placeholder="999-999-9999">
+
+            <label for="business">Business Name *</label>
+            <input id="business" name="bizname" required>
+            
+            <label for="member">Enter Membership Level</label>
+            <div id="radio">
+            <input id="member" id="one" name="mlevel" type="radio">
+            <label for="one">Level 1</label> 
+            <input id="member" id="two" name="mlevel" type="radio">
+            <label for="two">Level 2</label> 
+            <input id="member" id="three" name="mlevel" type="radio">
+            <label for="three">Level 3</label> 
+            <input id="member" id="four" name="mlevel" type="radio">
+            <label for="four">Level 4</label> 
+            </div>
+            
+            <label for="message"Business Description:></label>
+            <textarea id="message"></textarea>
+            <input id="date" type="hidden" name="todaydate">
+            <input type="submit" value="Join the Chamber">
+        </form>
+
+        <div>
+            <h3>NP Membership</h3>
+            <p>is for non profit organizations and there is no fee.</p>
+            <h3>Bronze Membership</h3>
+            <p>15% discounts on events, 10% discount on advertising, Fee of $50/month</p>
+            <h3>Silver Membership</h3>
+            <p>25% discount on events, 15% discount on advertising, Free participation in the trade fair, Fee of $100/month</p>
+            <h3>Gold Membership</h3>
+            <p>50% discount on events, 50% discount on advertising, Free participation in the trade fair, 5 free featured ads per year, 1 free training per quarter, Fee of $100/month</p>
+        </div>
+
+    </main>

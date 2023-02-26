@@ -1,0 +1,75 @@
+#join-main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width:90%;
+    margin: 0 auto;
+}
+
+label, input, textarea{
+    display: block;
+    font-size: 1.5em;
+}
+
+label{
+    margin-top: 30px;
+}
+
+input{
+    height: 50px;
+}
+
+input[type='radio']{
+    height: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #2B2D42;
+    font-size: 2.6em;
+}
+
+form input:required{
+    border-left: solid red 6px;
+}
+
+form input:required:valid{
+    border-left: solid green 4px;
+}
+
+#radio {
+    display: grid;
+    grid-template-columns: 60px 100px;
+}
+
+#radio label {
+    margin: 0;
+}
+
+textarea {
+    height: 150px;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+input[type='submit']{
+    height: 80px;
+    width: 75%;
+    background-color: white;
+    color: #2B2D42;
+}
+
+h3{
+    grid-column: 2/3;
+    text-align: center;
+    grid-row: none;
+}
+
+
+
+p{
+    color: #2B2D42;
+}
