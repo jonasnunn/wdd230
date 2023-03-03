@@ -1,0 +1,51 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.table{
+    display: none; /*Dont display anything until button is clicked*/
+}
+
+h1, h2 {
+    text-align: center;
+    color:navy;
+}
+
+.cards section {
+    border: 2px solid rebeccapurple;
+    background-color: lightblue;
+    padding: 30px;
+    width: 300px;
+    margin: 20px;
+}
+
+.cards img{
+    width: 95%;
+    box-shadow: 5px 10px 8px 5px;
+}
+
+
+#view{
+    text-align: center;
+    font-size: 2.7em;
+}
+
+#cards-but, #list-but{
+    border: 3px solid green;
+    border-radius: 3px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+td{
+    padding: 5px;
+    display: table-cell;
+    /* display: block; media query use table cell */
+}
+
+tr:nth-of-type(even){
+    background-color: #ccc; 
+}
