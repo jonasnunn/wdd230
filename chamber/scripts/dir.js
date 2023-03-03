@@ -1,4 +1,4 @@
-const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json"
+const url = 
 
 async function getProphetData() {
     const response = await fetch(url);
@@ -64,6 +64,7 @@ listClass = document.querySelector(".table")
 
 
 cardBut.addEventListener('click', () => {
+  console.log("clicked cards button");
   cardClass.style.display = "flex";
   listClass.style.display = "none";
 });
@@ -72,6 +73,7 @@ cardBut.addEventListener('click', () => {
 // Event listener for list
 
 listBut.addEventListener('click', () => {
+  console.log("clicked list button");
   cardClass.style.display = "none";
   listClass.style.display = "block";
 });
