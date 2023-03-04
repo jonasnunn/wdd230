@@ -1,4 +1,4 @@
-const url = 
+const url = "https://jonasnunn.github.io/wdd230/businfo.json"
 
 async function getProphetData() {
     const response = await fetch(url);

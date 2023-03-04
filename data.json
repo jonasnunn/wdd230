@@ -1,20 +1,20 @@
 {
     "businesses": [
       {
-        "name": "Very Real Moving Company & Sons",
-        "address": "1234 Last Street, Allen, Tx",
+        "name": "The Dinosaur Company",
+        "address": "420 Century Parkway, Allen, TX 75013",
         "phone": "436-241-2131",
-        "website": "movers.com",
+        "website": "https://www.thedinosaurcompany.shop/",
         "mlevel": "1",
-        "imageurl": ""
+        "imageurl": "images/dino.png"
       },
       {
         "name": "Another Local Grocery Store",
         "address": "4212 Island St, Allen Tx",
         "phone": "612-124-5231",
-        "website": "storeshop.com",
+        "website": "thefarminallen.com",
         "mlevel": "2",
-        "imageurl": ""
+        "imageurl": "images/farm.png"
       },
       {
         "name": "100% Chiropractic",
@@ -30,7 +30,7 @@
         "phone": "469-742-2311",
         "website": "www.buckarooservices.com",
         "mlevel": "1",
-        "imageurl": ""
+        "imageurl": "images/buck.png"
       },
       {
         "name": "Cabela's",
@@ -38,7 +38,7 @@
         "phone": "214-383-0502",
         "website": "Cabela's",
         "mlevel": "3",
-        "imageurl": ""
+        "imageurl": "images/cabelas.png"
       },
       {
         "name": "ABC Heating & Air Conditioning,Inc.",
@@ -57,20 +57,20 @@
         "imageurl": "images/jal.png"
       },
       {
-        "name": "Brigham",
-        "address": "",
-        "phone": "",
-        "website": "1",
-        "mlevel": "",
-        "imageurl": ""
+        "name": "Texas Legends Basketball",
+        "address": "2601 Avenue of the Stars, Suite 300, Frisco, TX 75034",
+        "phone": "214-469-0822",
+        "website": "www.texlegends.com",
+        "mlevel": "1",
+        "imageurl": "images/legends.png"
       },
       {
-        "name": "Brigham",
-        "address": "",
-        "phone": "",
-        "website": "2",
-        "mlevel": "",
-        "imageurl": ""
+        "name": "The Brass Tap",
+        "address": "700 Central Expressway S, Suite 550, Allen, TX 75013",
+        "phone": "972-548-7167",
+        "website": "www.collincountylaw.com",
+        "mlevel": "2",
+        "imageurl": "images/law.png"
       }
     ]
   }
