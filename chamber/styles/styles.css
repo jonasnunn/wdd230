@@ -168,7 +168,7 @@ a:hover{
 
 #weather{
     background-color: #2B2D42;
-    height: 300px;
+    height: 400px;
     width: 70%;
     margin: 0 auto;
     color: #FAF8F0;
@@ -178,12 +178,20 @@ a:hover{
     text-align: center;
     font-size: 2em;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 #weather h4{
     text-align: center;
     font-size: 2.3em;
     padding-top: 10px;
+    margin: 0;
+}
+
+#weather_icon{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 
 #news-release{
