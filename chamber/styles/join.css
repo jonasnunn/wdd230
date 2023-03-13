@@ -19,7 +19,8 @@ input[type='radio']{
 h1{
     text-align: center;
     color: #2B2D42;
-    font-size: 2.6em;
+    font-size: 1.7em;
+    margin-top: 50px;
 }
 
 form input:required{
@@ -27,7 +28,7 @@ form input:required{
 }
 
 form input:required:valid{
-    border-left: solid green 4px;
+    border-left: solid green 6px;
 }
 
 #radio {
@@ -57,8 +58,10 @@ input[type='submit']{
 }
 
 h3{
+    margin-top: 50px;
     grid-column: 2/3;
     text-align: center;
+    font-size: 1.4em;
 }
 
 p{
@@ -67,6 +70,7 @@ p{
     width: 75%;
     margin: 0 auto;
     text-align: center;
+    line-height: 1.4em;
 }
 
 @media screen and (min-width: 650px)

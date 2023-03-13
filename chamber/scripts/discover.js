@@ -9,6 +9,7 @@ else {
     let difference = (currentDate - lastDate) / 1000 / 60 / 60 / 24;
     difference = Math.round(difference)
     document.querySelector("#diff").innerHTML = difference;
+    localStorage.setItem("lastVisit", Date.now())
 }
 
 const images = document.querySelectorAll('[data-src]');
