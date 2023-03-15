@@ -64,7 +64,7 @@ h3{
     font-size: 1.4em;
 }
 
-p{
+main p{
     grid-column: 2/3;
     color: #2B2D42;
     width: 75%;

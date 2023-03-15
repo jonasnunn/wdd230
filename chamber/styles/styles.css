@@ -240,7 +240,7 @@ a:hover{
 #spot-1, #spot-2{
     width: 95%;
     height: 450px;
-    border: 1px black solid;
+    border: 1px #FAF8F0 solid;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -400,7 +400,6 @@ footer img{
     
     #spot-1, #spot-2{
         width: 95%;
-        border: 1px black solid;
         margin: 0 auto;
         margin-top: 10px;
         height: auto;
@@ -577,7 +576,7 @@ footer img{
 
     #spot-1, #spot-2, #spot-3{
         width: 95%;
-        border: 1px black solid;
+        border: 1px #FAF8F0 solid;
         margin: 0 auto;
         margin-top: 30px;
     }
