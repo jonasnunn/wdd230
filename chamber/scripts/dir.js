@@ -71,7 +71,6 @@ function displayTable(businesses) {
   }) 
 }
 
-
 // Clicked card button 
 cardBut = document.querySelector("#cards-but")
 cardClass = document.querySelector(".cards")

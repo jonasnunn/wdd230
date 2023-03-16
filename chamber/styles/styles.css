@@ -134,7 +134,7 @@ a:hover{
 
 #id-button{
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
     right: 40px;
     width: 200px;
     height: 50px;
@@ -142,6 +142,10 @@ a:hover{
     color: #FAF8F0;
     border-radius: 10px;
     font-size: 1.4em;
+}
+
+#id-button:hover{
+    color: #2B2D42;
 }
 
 #events{
@@ -366,6 +370,10 @@ footer img{
         border-radius: 5px;
     }
 
+    #id-button{
+        bottom: 60px;
+    }
+
     #events{
         grid-column: 1/2;
         grid-row: 5/6;
@@ -435,6 +443,10 @@ footer img{
         padding-bottom: 20px;
         left: 15%;
         font-size: 1.7em;
+    }
+
+    #join-button:hover{
+        color: #2B2D42;
     }
 
     #join p {

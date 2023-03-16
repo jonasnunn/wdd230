@@ -16,6 +16,10 @@ input[type='radio']{
     height: 20px;
 }
 
+#head-h1, #head-h2{
+    text-align: left;
+}
+
 h1{
     text-align: center;
     color: #2B2D42;
@@ -55,6 +59,10 @@ input[type='submit']{
     width: 100%;
     background-color: white;
     color: #2B2D42;
+}
+
+#sb:hover{
+    color:#EF233C;
 }
 
 h3{
