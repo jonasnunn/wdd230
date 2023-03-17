@@ -1,0 +1,87 @@
+/* colors
+#88CA5E green
+#EDAFB8 pink
+#F7E1D7 light pink
+#4A5759 grey
+#7E6551 brown
+#242722 black*/
+
+body{
+    background-color:white;
+}
+
+#logo-img{
+    max-width: 92px;
+    display: inline;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #242722;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: #88CA5E;
+}
+
+#nearest-store{
+    text-decoration: none;
+    color: #242722;
+}
+
+h3{
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin: 0;
+    font-weight: 500;
+    color: #242722;
+}
+
+#hero{
+    position: relative;
+}
+
+#hero-img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+#hero-button{
+    position: absolute;
+    left: 36%;
+    bottom: 20px;
+    width: 20%;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #EDAFB8;
+    border: #242722 solid 1px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: #242722;
+}
+
+#hero-button:hover{
+    color: #7E6551;
+}
+
+/*nav img{
+    z-index: -1;
+    max-width: 80px;
+} */

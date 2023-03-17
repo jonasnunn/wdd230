@@ -30,18 +30,18 @@ main img{
 
 }
 
-/* @media screen and (min-width: 800px){
+/* @media screen and (min-width: 1200px){
 
     main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     main img{
         display: block;
         margin: 0 auto;
-        width: 90%;
+        width: 50%;
     }
 
 } */
