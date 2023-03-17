@@ -48,7 +48,7 @@ h1, h2 {
 
 td{
     padding: 5px;
-    display: table-cell;
+    display: block;
     /* display: block; media query use table cell */
 }
 
@@ -62,4 +62,12 @@ tr:nth-of-type(even){
 
 main{
     display: block;
+}
+
+@media screen and (min-width: 700px){
+    
+    td{
+    display: table-cell;
+    padding: 10px;
+    }
 }

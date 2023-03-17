@@ -7,8 +7,10 @@ main{
 }
 
 main img{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
     margin-top: 50px;
-    width: 500px;
 }
 
 #days{
@@ -30,18 +32,19 @@ main img{
 
 }
 
-/* @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
 
     main{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     main img{
         display: block;
         margin: 0 auto;
-        width: 50%;
+        margin-top: 50px;
+        width: 80%;
     }
 
-} */
+}
