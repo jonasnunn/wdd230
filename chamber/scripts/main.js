@@ -42,7 +42,7 @@ const getWeather = async () => {
     document.querySelector('#condition').textContent =  data.currentConditions.conditions;
     document.querySelector('#weather_icon').src = image;
     document.querySelector('#weather_icon').alt= data.currentConditions.conditions + ' icon';
-    console.log(data);
+    // console.log(data);
   };
 getWeather();
 
