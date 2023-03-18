@@ -468,15 +468,6 @@ footer img{
         width: 150px;
     }
 
-    #footer-content{
-        display:flexbox
-    }
-
-    #footer-content:first-child a{
-        display:flexbox
-    }
-
-
     footer span{
         grid-column: 2/3;
         grid-row: 1/-1;
@@ -647,13 +638,7 @@ footer img{
     }
 
     #footer-content{
-        display:flexbox;
-        /* margin-right: 20px; */
         grid-column: 2/3;
-    }
-
-    #footer-content:first-child a{
-        display:flexbox
     }
 
     footer span{
@@ -677,10 +662,6 @@ footer img{
     #hero-5{
         display: block;
     }
-
-    /* #id-button{
-    display: none;
-    } */
 
     #hero p{
         background-color: transparent;
