@@ -51,7 +51,7 @@ nav a:hover{
     color: #242722;
 }
 
-h3{
+header h3{
     display: inline;
     position: absolute;
     right: 20px;
@@ -96,9 +96,31 @@ h3{
 }
 
 #weather{
-    width: 10%;
-    padding: 20px;
+    display: flex;
+    background-color: #88CA5E;
+}
+
+#weather h2{
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#weather-0, #weather-1, #weather-2{
+    width: 30%;
+    margin: 20px;
     background-color: #EDAFB8;
+    border: 1px solid #242722;
+}
+
+#weather h3, p, span{
+    text-align: center;
+}
+
+#weather img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 650px){
@@ -134,7 +156,7 @@ h3{
     
     .smoothies:hover{
        transform: scale(1.2);
-       transition: .2s;
+       transition: .15s;
     }
 
     #hero-img{
