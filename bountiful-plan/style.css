@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+body{
+    background-color: #F7E1D7;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+    color: #4A5759;
+    font-family: 'Lusitana', serif;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#large{
+	width: 80%;
+}
+#med{
+	width: 60%;
+}
+#small{
+	width: 20%;
+}
+
+#persona{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+#scenarios{
+    margin-top: 50px;
+}
+.subtitle{
+    font-size: 1.5em;
+}
+
+#design{
+    font-size: 1.8em;
+    margin-top: 100px;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px black solid;
+}
+
+#blue {
+    background-color: #88CA5E;
+    padding: 50px;
+}
+#white {
+    background-color: #EDAFB8;
+}
+#black {
+    background-color: #F7E1D7;
+}
+#red {
+    background-color: #4A5759;
+}
+#purple {
+    background-color: #7E6551 ;
+}
+
+#type{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Color Pallet */
+/* 
+#88CA5E green
+#EDAFB8 pink
+#F7E1D7 light pink
+#4A5759 grey
+#7E6551 brown
+#242722 black*/
+
+header{
+	background-color: #88CA5E;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+nav {
+	background-color: #7E6551;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #708080;
+	color: #A5D9EB;
+}
+
+/***********************************************/
+/** Media Queries for larger views *************/
+/***********************************************/
+
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+}
+
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
