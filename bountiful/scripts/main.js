@@ -16,7 +16,7 @@ const getWeather = async () => {
     document.querySelector("#maxt").textContent = data.days[0].tempmax;
     document.querySelector("#mint").textContent = data.days[0].tempmin;
     let image = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.currentConditions.icon}.svg`;
-    document.querySelector('#ws').textContent = data.currentConditions.windspeed;
+    // document.querySelector('#ws').textContent = data.currentConditions.windspeed;
     document.querySelector('#condition').textContent =  data.currentConditions.conditions;
     document.querySelector('#hum').textContent = data.currentConditions.humidity;
     document.querySelector('#weather_icon').src = image;
@@ -42,14 +42,14 @@ const getWeather = async () => {
 getWeather();
 
 // Windchill calculations
-const temp = document.querySelector("#t").textContent;
-const wSpeed = document.querySelector("#ws").textContent;
-let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (.04275*temp*Math.pow(wSpeed, 0.16)));
+// const temp = document.querySelector("#t").textContent;
+// const wSpeed = document.querySelector("#ws").textContent;
+// let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (.04275*temp*Math.pow(wSpeed, 0.16)));
 
-if (temp <= 50 && wSpeed >= 3) {
-    const windChill = document.querySelector(".wind-chill")
-    windChill.textContent = chill;
-}
+// if (temp <= 50 && wSpeed >= 3) {
+//     const windChill = document.querySelector(".wind-chill")
+//     windChill.textContent = chill;
+// }
 
 
 // tempmin
