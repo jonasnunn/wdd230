@@ -1,0 +1,74 @@
+label, input, textarea{
+    display: block;
+    font-size: 1.2em;
+}
+
+label{
+    margin-top: 30px;
+    width: 50%;
+}
+
+input{
+    height: 50px;
+}
+
+input[type='radio']{
+    height: 20px;
+}
+
+form input:required{
+    border-left: solid red 6px;
+}
+
+form input:required:valid{
+    border-left: solid green 6px;
+}
+
+#radio {
+    display: grid;
+    grid-template-columns: 110px 30px;
+}
+
+#radio label {
+    margin: 0;
+}
+
+textarea {
+    height: 50px;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+input[type='submit']{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    color: #242722;
+}
+
+@media screen and (min-width: 650px)
+{
+    main { 
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px)
+{
+    main { 
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

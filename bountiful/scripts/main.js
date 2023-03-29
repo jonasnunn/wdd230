@@ -1,9 +1,21 @@
 // console.log("hi")
 nav = document.querySelector("#nav");
 hamButton = document.querySelector("#ham-icon");
+menu = document.querySelector("#mobile-menu");
+let menuOpen = false;
 hamButton.addEventListener("click", ()=> {
-    // nav.style.flex.direction = "column";
-})
+    if(!menuOpen)  {
+      hamButton.classList.add('open');
+      menu.classList.add('open');
+      menuOpen = true;
+    }
+    else {
+      hamButton.classList.remove('open');
+      menu.classList.remove('open');
+      menuOpen = false;
+    }
+  // nav.style.flex.direction = "column";
+});
 
 
 // Weather Forecast

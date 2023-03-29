@@ -6,17 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script defer src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/fresh.css">
+    <!-- <script defer src="scripts/main.js"></script> -->
+    <script defer src="scripts/fresh.js"></script>
 </head>
 <body>
     
     <header>
-        <nav>
+
+        <img id="logo-img" src="images/logo-500x300.png" alt="Bountiful Foods Logo">
+    
+        <nav id="nav">
             <a href="index.html">Home</a>
             <a href="fresh.html">Fresh</a>
             <a href="about.html">About Us</a>
+            
         </nav>
+    
+        <a id="nearest-store" href="index.html"><h3>Find Nearest Store</h3></a>
+        <a id="ham-icon" href="#">&#9776;</a>
+    
+        <div id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="about.html">About Us</a>
+            <a id="nearest-store" href="index.html">Find Store</a>
+        </div>
     </header>
     
+    <main id="join_main">
+        <form method="get" action="index.html">
+            <label for="fname">Name</label>
+            <input id="fname" name="firstname" required>
+            
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+            
+            <label for="phone">Cell Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="999-999-9999">
+
+            <label> What fruits would you like <br>...........................................</label>
+            <div id="radio">
+            <label id ="fruitlabel1" for="one">Fruit</label> 
+            <input id="one" name="f1" type="radio">
+            <label id ="fruitlabel2"for="two">Fruit</label> 
+            <input id="two" name="f2" type="radio">
+            <label id ="fruitlabel3" for="three">Fruit</label> 
+            <input id="three" name="f3" type="radio">
+            <label id ="fruitlabel4" for="three">Fruit</label> 
+            <input id="three" name="f4" type="radio">
+            <label id ="fruitlabel5" for="three">Fruit</label> 
+            <input id="three" name="f5" type="radio">
+            </div>
+
+            <label for="message">Special Requests:</label>
+            <textarea id="message"></textarea>
+
+            <input id="timeStamp" type="hidden" name="todaydate">
+            <input id="sb" type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+
 </body>
 </html>

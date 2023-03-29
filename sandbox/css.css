@@ -1,0 +1,9 @@
+p{
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 7px 10px;
+    max-width: 450px;
+    background-color: blue;
+    display: grid;
+    grid-gap: ;
+}
