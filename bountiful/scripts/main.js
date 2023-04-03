@@ -53,6 +53,9 @@ const getWeather = async () => {
   };
 getWeather();
 
+localStorage
+
+
 // Windchill calculations
 // const temp = document.querySelector("#t").textContent;
 // const wSpeed = document.querySelector("#ws").textContent;

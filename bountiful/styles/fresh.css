@@ -16,6 +16,10 @@ input[type='radio']{
     height: 20px;
 }
 
+form {
+    display: block;
+}
+
 form input:required{
     border-left: solid red 6px;
 }
@@ -49,6 +53,27 @@ input[type='submit']{
     background-color: white;
     color: #242722;
 }
+
+#info{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info h3{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+#info p{
+    text-align: right;
+    margin: 15px;
+}
+
+#info span{
+    margin: 16px 0px;
+    text-align: left;
+}
+
 
 @media screen and (min-width: 650px)
 {

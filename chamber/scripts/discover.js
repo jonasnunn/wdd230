@@ -34,7 +34,6 @@ const io = new IntersectionObserver (
                 preloadImages(entry.target)
             }
         })
-        
     },
     options
 );

@@ -35,7 +35,7 @@
     </header>
     
     <main id="join_main">
-        <form method="get" action="index.html">
+        <form id="myform" method="get" action="#">
             <label for="fname">Name</label>
             <input id="fname" name="firstname" required>
             
@@ -45,18 +45,18 @@
             <label for="phone">Cell Phone</label>
             <input id="phone" name="phone" type="tel" placeholder="999-999-9999">
 
-            <label> What fruits would you like <br>...........................................</label>
+            <label> Please select 3 fruits<br>..................................</label>
             <div id="radio">
             <label id ="fruitlabel1" for="one">Fruit</label> 
-            <input id="one" name="f1" type="radio">
+            <input id="one" name="f1" type="checkbox">
             <label id ="fruitlabel2"for="two">Fruit</label> 
-            <input id="two" name="f2" type="radio">
+            <input id="two" name="f2" type="checkbox">
             <label id ="fruitlabel3" for="three">Fruit</label> 
-            <input id="three" name="f3" type="radio">
+            <input id="three" name="f3" type="checkbox">
             <label id ="fruitlabel4" for="three">Fruit</label> 
-            <input id="three" name="f4" type="radio">
+            <input id="three" name="f4" type="checkbox">
             <label id ="fruitlabel5" for="three">Fruit</label> 
-            <input id="three" name="f5" type="radio">
+            <input id="three" name="f5" type="checkbox">
             </div>
 
             <label for="message">Special Requests:</label>
@@ -67,8 +67,48 @@
 
         </form>
 
+        <div id="info">
+            <h3>Form Info</h3> 
+            <p>Name:</p>
+            <span id="nameP"></span>
+
+            <p>Email:</p>
+            <span id="emailP"></span>
+
+            <p>Phone:</p>
+            <span id="phoneP"></span>
+
+            <p>Fruit 1:</p>
+            <span id="fruit1"></span>
+
+            <p>Fruit 2:</p>
+            <span id="fruit2"></span>
+
+            <p>Fruit 3:</p>
+            <span id="fruit3"></span>
+
+            <p>Special Instructions:</p>
+            <span id="spec"></span>
+
+            <p>Order Date:</p>
+            <span id="date"></span>
+
+            <p>Carbs:</p>
+            <span id="carbsP"></span>
+
+            <p>Protein:</p>
+            <span id="proP"></span>
+
+            <p>Fat:</p>
+            <span id="fatP"></span>
+
+            <p>Sugar:</p>
+            <span id="sugarP"></span>
+
+            <p>Calories:</p>
+            <span id="calP"></span>
+
+        </div>
     </main>
-
-
 </body>
 </html>
