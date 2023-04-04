@@ -1,4 +1,3 @@
-// console.log("hi")
 nav = document.querySelector("#nav");
 hamButton = document.querySelector("#ham-icon");
 menu = document.querySelector("#mobile-menu");
@@ -17,7 +16,6 @@ hamButton.addEventListener("click", ()=> {
   // nav.style.flex.direction = "column";
 });
 
-
 // Weather Forecast
 const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/carlsbad?unitGroup=us&key=5WRNLWGHZZSTGCT4HG57TDCM6&contentType=json";
 const getWeather = async () => {
@@ -33,7 +31,7 @@ const getWeather = async () => {
     document.querySelector('#hum').textContent = data.currentConditions.humidity;
     document.querySelector('#weather_icon').src = image;
     document.querySelector('#weather_icon').alt= data.currentConditions.conditions + ' icon';
-    console.log(data);
+    // console.log(data);
 
     //Day 1
     document.querySelector("#maxt1").textContent = data.days[1].tempmax;
@@ -52,9 +50,6 @@ const getWeather = async () => {
     document.querySelector('#weather_icon2').alt= data.days[2].conditions + ' icon';
   };
 getWeather();
-
-localStorage
-
 
 // Windchill calculations
 // const temp = document.querySelector("#t").textContent;

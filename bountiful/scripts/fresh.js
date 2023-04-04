@@ -1,5 +1,6 @@
 const url = "https://andejuli.github.io/wdd230/fruit.json";
 
+// Event listener on submit button
 let submitBut = document.querySelector("#sb");
 let myform = document.querySelector("#myform");
 let info = document.querySelector("#info");
@@ -8,6 +9,7 @@ submitBut.addEventListener("click", () => {
     info.style.display = "grid";
 })
 
+// declare variables
 let r1;
 let r2;
 let r3;
@@ -20,12 +22,18 @@ let fat;
 let calories;
 let sugar;
 
+const currentDate = new Date().toISOString().slice(0, 10);
+
+function getDrinkCounter() {
+    return drinkCounter;
+}
+
 async function getFruitData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data);
     displayFruit(data);
-    setNutrition(data);
+    setNutritionData(data);
     setFormInfo(data);
 }
 
@@ -51,17 +59,17 @@ const displayFruit = (data) => {
 }
 
 
-const setNutrition = (data) => {
-    carbs = data[r1].nutritions.carbohydrates + data[r2].nutritions.carbohydrates + data[r3].nutritions.carbohydrates + data[r4].nutritions.carbohydrates + data[r5].nutritions.carbohydrates
-    protein = data[r1].nutritions.protein + data[r2].nutritions.protein + data[r3].nutritions.protein + data[r4].nutritions.protein + data[r5].nutritions.protein
-    fat = data[r1].nutritions.fat + data[r2].nutritions.fat + data[r3].nutritions.fat + data[r4].nutritions.fat + data[r5].nutritions.fat
-    calories = data[r1].nutritions.calories + data[r2].nutritions.calories + data[r3].nutritions.calories + data[r4].nutritions.calories + data[r5].nutritions.calories
-    sugar = data[r1].nutritions.sugar + data[r2].nutritions.sugar + data[r3].nutritions.sugar + data[r4].nutritions.sugar + data[r5].nutritions.sugar
+const setNutritionData = (data) => {
+    carbs = data[r1].nutritions.carbohydrates + data[r2].nutritions.carbohydrates + data[r3].nutritions.carbohydrates
+    protein = data[r1].nutritions.protein + data[r2].nutritions.protein + data[r3].nutritions.protein
+    fat = data[r1].nutritions.fat + data[r2].nutritions.fat + data[r3].nutritions.fat
+    calories = data[r1].nutritions.calories + data[r2].nutritions.calories + data[r3].nutritions.calories
+    sugar = data[r1].nutritions.sugar + data[r2].nutritions.sugar + data[r3].nutritions.sugar
 }
 
 const setFormInfo = (data) => {
     let name = document.querySelector("#nameP");
-    name.textContent = "Jonas";
+    name.textContent = documnet.querySelector("formElement.firstname");
     let email = document.querySelector("#emailP");
     email.textContent = "joe@gmail.com";
     let phone = document.querySelector("#phoneP");
@@ -75,10 +83,10 @@ const setFormInfo = (data) => {
     let spec = document.querySelector("#spec");
     spec.textContent = "Nothing";
     let date = document.querySelector("#date");
-    date.textContent = "Today";
+    date.textContent = currentDate;
     let carbP = document.querySelector("#carbsP");
     carbP.textContent = carbs;
-    let proteinP = document.querySelector("#proP");
+    let proP = document.querySelector("#proP");
     proP.textContent = protein;
     let fatP = document.querySelector("#fatP");
     fatP.textContent = fat;
@@ -87,3 +95,21 @@ const setFormInfo = (data) => {
     let calP = document.querySelector("#calP");
     calP.textContent = calories;
 }
+
+// Local Storage drink count 
+let drinkcount = 0;
+
+function drinkCount(){
+  if (localStorage.getItem("drinkcount")){
+    drinkcount = Number(localStorage.getItem("drinkcount")) + 1;
+    localStorage.setItem("drinkcount", drinkcount);
+    // console.log("IF PART");
+  }
+  else {
+    localStorage.setItem("drinkcount", 1)
+    // console.log("ELSE PART");
+  }
+}
+document.querySelector("#sb").addEventListener("click", drinkCount)
+
+// formElement.name.value

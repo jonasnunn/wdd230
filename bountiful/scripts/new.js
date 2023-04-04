@@ -1,0 +1,1 @@
+document.querySelector("#drinks").innerHTML = localStorage.getItem("drinkcount")
