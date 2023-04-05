@@ -28,11 +28,9 @@ input[type='radio']{
 
 form {
     display: block;
-    /* width: 50%; */
     min-width: 400px;
     max-width: fit-content;
     background-color: #88CA5E;
-    /* box-shadow: 10px 10px black; */
     margin: 0 auto;
     padding-bottom: 10px;
     border: solid 2px black;
@@ -49,7 +47,6 @@ form input:required:valid{
 
 #radio {
     display: grid;
-    /* grid-template-columns: 2fr 1fr; */
     grid-template-columns: 130px 40px;
 }
 
@@ -95,11 +92,11 @@ input[type='submit']{
 
 #info p{
     text-align: right;
-    margin: 15px;
+    margin: 10px;
 }
 
 #info span{
-    margin: 16px 0px;
+    margin: 10px 0px;
     text-align: left;
 }
 
