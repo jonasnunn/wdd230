@@ -81,21 +81,3 @@ const getWeather = async () => {
     document.querySelector('#weather_icon2').alt= data.days[2].conditions + ' icon';
   };
 getWeather();
-
-// Windchill calculations
-// const temp = document.querySelector("#t").textContent;
-// const wSpeed = document.querySelector("#ws").textContent;
-// let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(wSpeed, 0.16)) + (.04275*temp*Math.pow(wSpeed, 0.16)));
-
-// if (temp <= 50 && wSpeed >= 3) {
-//     const windChill = document.querySelector(".wind-chill")
-//     windChill.textContent = chill;
-// }
-
-
-// tempmin
-// function getTime(){
-// let today = new Date()
-// let time = today.getHours();
-// return time
-// }
