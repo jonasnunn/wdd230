@@ -144,7 +144,7 @@ const setFormInfo = () => {
     let run5 = true;
 
     for (i = 0; i < 3; i++){ 
-      console.log(i)
+      // console.log(i)
       
       if (check1.checked && run1){
         run1 = false;
