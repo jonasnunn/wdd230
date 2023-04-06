@@ -26,8 +26,8 @@ images.forEach(img => {
     io.observe(img);
 })
 
-let currentDate = document.lastModified
-document.querySelector('#last-modified').innerHTML = "Last Modified: " + currentDate
+let todayDate = document.lastModified
+document.querySelector('#last-modified').innerHTML = "Last Modified: " + todayDate
 
 nav = document.querySelector("#nav");
 hamButton = document.querySelector("#ham-icon");

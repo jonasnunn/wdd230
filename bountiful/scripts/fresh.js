@@ -8,15 +8,10 @@ submitBut.addEventListener("click", () => {
     myform.style.display = "none";
     info.style.display = "grid";
     setFormInfo();
+    console.log("ran")
 })
 
 // declare global variables
-let r1;
-let r2;
-let r3;
-let r4;
-let r5;
-
 let carbs = 0;
 let protein = 0;
 let fat = 0;
@@ -70,11 +65,11 @@ getFruitData();
 
 
 const setFruit = (data) => {
-    r1 = Math.floor(Math.random() * 38)
-    r2 = Math.floor(Math.random() * 38)
-    r3 = Math.floor(Math.random() * 38)
-    r4 = Math.floor(Math.random() * 38)
-    r5 = Math.floor(Math.random() * 38)
+    let r1 = Math.floor(Math.random() * 38)
+    let r2 = Math.floor(Math.random() * 38)
+    let r3 = Math.floor(Math.random() * 38)
+    let r4 = Math.floor(Math.random() * 38)
+    let r5 = Math.floor(Math.random() * 38)
 
     let ftext = document.querySelector("#fruitlabel1")
     ftext.textContent = data[r1].name;
